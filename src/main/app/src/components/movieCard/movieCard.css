@@ -1,0 +1,24 @@
+.movieCardContainer {
+  width: max-content;
+  border-radius: 10px;
+}
+
+.movieCardImage {
+  width: 160px;
+  object-fit: contain;
+  border-radius: 10px 10px 10px 10px;
+  object-position: center;
+}
+.movieCardLower {
+  padding: 5px 5px;
+}
+
+.movieCardTitle {
+  font-size: 0.85rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+.movieCardReleaseDate {
+  font-size: 0.7rem;
+}

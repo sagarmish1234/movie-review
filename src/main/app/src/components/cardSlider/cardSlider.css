@@ -1,0 +1,68 @@
+.cardSliderContainer {
+  width: 85vw;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #1f1f29;
+  padding: 30px 20px;
+  height: max-content;
+  border-radius: 10px;
+}
+
+.cardSliderHeader {
+  display: flex;
+  align-items: center;
+}
+
+.cardSliderHeaderTitle {
+  font-size: 1.8rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+.cardSliderHeaderUrls {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.cardSliderOption {
+  padding: 3px 15px;
+  border-radius: 20px;
+  height: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cardSliderOption.selected {
+  background-color: white;
+  color: black;
+  transition-duration: 0.5s;
+}
+
+.cardSliderCardList {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-color: white;
+  padding-bottom: 30px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cardSliderCardList::-webkit-scrollbar {
+  /* display: none; */
+  background-color: transparent;
+  height: 10px;
+}
+
+.cardSliderCardList::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.cardSliderCardList::-webkit-scrollbar-thumb {
+  background-color: rgb(12, 12, 30);
+  border-radius: 20px;
+}
+
+

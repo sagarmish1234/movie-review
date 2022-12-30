@@ -13,8 +13,12 @@ const request = async (options) => {
   return response;
 };
 
-export const getImageURL = (url,width,height) => {
+export const getImageURL = (url, width, height) => {
   return `${IMAGE_URL}/w${width}_and_h${600}_multi_faces_filter(duotone,032541,01b4e4)${url}`;
+};
+
+export const getPosterURL = (url) => {
+  return `${IMAGE_URL}/w${220}_and_h${330}_face${url}`;
 };
 
 export const indexGenerator = (start, end) => {
@@ -23,7 +27,9 @@ export const indexGenerator = (start, end) => {
 };
 
 export const randomBackdropIndex = (response) => {
-  let images = response.data.backdrops.filter(image => image.width==1920);
+  let images = response.data.backdrops.filter(
+    (image) => image.width == 1920
+  );
   let index = indexGenerator(0, images.length) - 1;
   return images[index];
 };
@@ -45,6 +51,13 @@ export const apiTvOnAir = () => {
 export const apiHeroImageGenerate = () => {
   return request({
     url: `/movie/top_rated?page=1`,
+    method: 'GET',
+  });
+};
+
+export const apiFetchUrlItems = (uri) => {
+  return request({
+    url: uri,
     method: 'GET',
   });
 };

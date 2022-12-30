@@ -9,6 +9,7 @@
   font-size: 1rem;
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 100;
 }
 
 .dropdownOption {
