@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
-import Image from '../../assets/images/login-image.jpg';
+import Image from '../../assets/images/login-image1.webp';
 import { apiLoginRequest } from '../../utils/springUtils';
 import { useNavigate } from 'react-router-dom';
 

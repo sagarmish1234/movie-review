@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './register.css';
-import Image from '../../assets/images/register-image.jpg';
+import Image from '../../assets/images/register-image1.webp';
 import { apiRegisterRequest } from '../../utils/springUtils';
 import { useNavigate } from 'react-router-dom';
 

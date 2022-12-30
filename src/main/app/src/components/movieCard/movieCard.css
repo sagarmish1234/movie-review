@@ -1,6 +1,11 @@
 .movieCardContainer {
   width: max-content;
   border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+.movieCardContainer:hover {
+  color: white;
 }
 
 .movieCardImage {

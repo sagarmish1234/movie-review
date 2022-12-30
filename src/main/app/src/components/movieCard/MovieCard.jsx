@@ -1,5 +1,6 @@
 import React from 'react';
 import { getPosterURL } from '../../utils/movieUtils';
+import { Link } from 'react-router-dom';
 import './movieCard.css';
 
 function MovieCard({ movie }) {
@@ -13,7 +14,7 @@ function MovieCard({ movie }) {
   };
 
   return (
-    <div className="movieCardContainer">
+    <Link to={`/${movie.id}/detail`} className="movieCardContainer">
       <div className="movieCardUpper">
         <img
           src={getPosterURL(movie.poster_path)}
@@ -29,7 +30,7 @@ function MovieCard({ movie }) {
           {formatDate(movie?.release_date || movie?.first_air_date)}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
