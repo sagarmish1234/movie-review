@@ -1,0 +1,71 @@
+.navbarContainer {
+  width: 100%;
+  background-color: #01070d;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbarHeader {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+}
+
+.navbarLeft {
+  display: flex;
+  gap: 50px;
+  height: 100%;
+  align-items: center;
+}
+
+.navbarBrand {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbarBrandLogo {
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+}
+.navbarBrandTitle {
+  font-size: 1.2rem;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbarLink.navbarBrand {
+  display: flex;
+}
+
+.navbarLink {
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.navbarLink:hover{
+  color: white;
+}
+
+.navbarLink:hover > .dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

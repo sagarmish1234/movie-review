@@ -1,0 +1,24 @@
+.dropdownContainer {
+  position: absolute;
+  width: min-content;
+  top: 0px;
+  transform: translateY(60px);
+  background-color: rgb(152, 151, 151);
+  border-radius: 7px;
+  display: none;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdownOption {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+  min-width: max-content;
+  width: 100%;
+}
+
+.dropdownOption:hover {
+  background-color: rgb(118, 118, 118);
+}
