@@ -1,7 +1,7 @@
 {
   "name": "app",
   "private": true,
-  "homepage": "http://localhost:8080/movieReview",
+  "homepage": "./",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
