@@ -27,8 +27,6 @@ public class SecurityConfiguration {
     JwtAuthenticationFilter jwtAuthenticationFilter;
 
 
-
-
     @Bean
     AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
 
@@ -47,7 +45,10 @@ public class SecurityConfiguration {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests((authorize) -> authorize
-                        .antMatchers("/api/auth/**","/api/welcome","/h2-console/**").permitAll()
+                        .antMatchers("/api/auth/**", "/api/welcome", "/h2-console/**").permitAll()
+                        .antMatchers("/api/**").authenticated()
+                        .antMatchers("/**")
+                        .permitAll()
                         .anyRequest()
                         .authenticated()
                 );

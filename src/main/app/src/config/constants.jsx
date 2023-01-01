@@ -1,4 +1,7 @@
-export const BASE_URL = 'http://localhost:2510';
+// export const BASE_URL = 'http://localhost:2510';
+const APPLICATION_NAME = "movieReview"
+export const BASE_URL = `${window.location.host}/${APPLICATION_NAME}`;
+
 export const API_URL = BASE_URL + '/api';
 
 export const MOVIE_URL = 'https://api.themoviedb.org/3';
